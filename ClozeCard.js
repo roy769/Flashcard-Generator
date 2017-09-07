@@ -1,8 +1,8 @@
 var Back = require("./back")
 
 
-
-      function backToggle()
+//constructor
+      var Cloze = function backToggle(text, cloze)
       {
 
       var answer = [];
