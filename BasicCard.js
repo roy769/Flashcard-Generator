@@ -1,17 +1,19 @@
-  var Front = require("./front")
-
+var fs = require("fs");
 
 //constructor
-      var Basic = function frontToggle(back, front)
+       Basic = function frontToggle(back, front)
       {
         this.front = front;
         this.back = back;
-      this.flipCard: function(
+        this.flipCard = function()
           {
-            //if user clicks on card show answer
-          }
-        )
+            if (this.front === true)
+            {
+              console.log(this.back);
+            }
+          };
+
 
       }
 
-      module.exports = Basic;
+      module.exports = BasicCard;

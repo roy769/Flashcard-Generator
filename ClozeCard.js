@@ -1,21 +1,19 @@
-var Back = require("./back")
+var fs =require("fs");
+var Basic = require(./BasicCard)
 
-
+//open array for cloze an partial text
+      var frontcard = [];
 //constructor
-      var Cloze = function backToggle(text, cloze)
+       Cloze = function backToggle(text, cloze)
       {
-
-      var answer = [];
-
-        this.backOne = "answerOne" ;
-        this.backTwo = "answerTwo"; ,this.backThree = "answerThree" ,this.backFour = "answerFour" ;
-
-          this.addAnswer = function ()
-            {
-
-            }
+      //stackoverflow
+      this.text = text;
+      this.cloze = cloze;
+      this.partial = text.replace(cloze,"...");
       }
 
 //if question side is chosen put answer on back
 
 //on click load next
+
+module.exports = ClozeCard;
