@@ -1,19 +1,19 @@
+//to allow read/write
 var fs = require("fs");
 
 //constructor
-       Basic = function frontToggle(back, front)
+        var BasicCard = function(back, front)
       {
         this.front = front;
         this.back = back;
-        this.flipCard = function()
-          {
-            if (this.front === true)
-            {
-              console.log(this.back);
-            }
-          };
-
-
+        this.printInfo = function()
+        {
+            console.log("1: " + this.front + this.back);
+        }
       }
+
+        var flashcard =  newBasicCard("the president smells like","twinkie");
+
+        flashcard.printInfo();
 
       module.exports = BasicCard;
