@@ -1,3 +1,4 @@
 # Flashcard-Generator
 
-Export and Import ... lets study for a test.  
+Export and Import ... require study for a test.  
+HTML CSS Node
